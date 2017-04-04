@@ -1,0 +1,302 @@
+﻿@{
+    ViewBag.Title = "Escolha seu lanche";
+}
+
+    <body>
+        <div id="ingredientes">
+            <section id="ingredientes-cabecalho">
+                <h1>@ViewBag.Title</h1>
+                <h1><b>Passo 2: </b>Escolha os ingredientes</h1>
+            </section>
+            <br />
+            <br />
+
+            <div class="row">
+                <div class="col-sm-1 col-xs-0"></div>
+                <div class="col-sm-5 col-xs-4">
+                    <ul class="options-list">
+                        <li class="clearfix layout-qty">
+                            <img src="~/Images/REMOVE.png" style="width: 20px; height: 20px;" onclick="RemoveAlface()" />
+
+                            <span id="qtdAlface" style="font-size: medium" onload="AddAlface()">0</span>
+
+                            <img src="~/Images/ADD.png" style="width: 20px; height: 20px;" onclick="AddAlface()" />
+
+                            <span style="font-size: medium">
+                                <strong>Alface</strong>
+                            </span>
+                        </li>
+
+                        <li class="clearfix layout-qty">
+                            <img src="~/Images/REMOVE.png" style="width: 20px; height: 20px;" onclick="RemoveBacon()" />
+
+                            <span id="qtdBacon" style="font-size: medium">@ViewBag.B</span>
+
+                            <img src="~/Images/ADD.png" style="width: 20px; height: 20px;" onclick="AddBacon()" />
+
+                            <span style="font-size: medium">
+                                <strong>Bacon</strong>
+                            </span>
+                        </li>
+
+                        <li class="clearfix layout-qty">
+                            <img src="~/Images/REMOVE.png" style="width: 20px; height: 20px;" onclick="RemoveHamburguer()" />
+
+                            <span id="qtdHamburguer" style="font-size: medium">@ViewBag.H</span>
+
+                            <img src="~/Images/ADD.png" style="width: 20px; height: 20px;" onclick="AddHamburguer()" />
+
+                            <span style="font-size: medium">
+                                <strong>Hamburguer</strong>
+                            </span>
+                        </li>
+
+                        <li class="clearfix layout-qty">
+                            <img src="~/Images/REMOVE.png" style="width: 20px; height: 20px;" onclick="RemoveOvo();" />
+
+                            <span id="qtdOvo" style="font-size: medium">@ViewBag.O</span>
+
+                            <img src="~/Images/ADD.png" style="width: 20px; height: 20px;" onclick="AddOvo();" />
+
+                            <span style="font-size: medium">
+                                <strong>Ovo</strong>
+                            </span>
+                        </li>
+
+                        <li class="clearfix layout-qty">
+                            <img src="~/Images/REMOVE.png" style="width: 20px; height: 20px;" onclick="RemoveQueijo();" />
+
+                            <span id="qtdQueijo" style="font-size: medium">@ViewBag.Q</span>
+
+                            <img src="~/Images/ADD.png" style="width: 20px; height: 20px;" onclick="AddQueijo();" />
+
+                            <span style="font-size: medium">
+                                <strong>Queijo</strong>
+                            </span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="col-sm-3 col-xs-2">
+                    <ul class="options-list">
+                        <li class="clearfix layout-qty"></li>
+                        <li class="clearfix layout-qty"></li>
+                        <li class="clearfix layout-qty"></li>
+                        <li class="clearfix layout-qty">
+                            <label style="font-size: medium"><strong>Subtotal</strong> </label>
+                            <label id="lblValor" style="font-size: medium"><strong>R$@ViewBag.S</strong> </label>
+                        </li>
+                        <li class="clearfix layout-qty">
+                            <label style="font-size: medium"><strong>Total</strong> </label>
+                            <label id="lblTotal" style="font-size: medium"><strong>R$ 0,00</strong> </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="options-list">
+                    <li>
+                        <button class="button" style="width: 95%; font-size: medium" onclick="FinalizarPedido()">Finalizar Pedido</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+
+
+<script language="javascript" type="text/javascript">
+    function FinalizarPedido() {
+        var qtdQueijo = $("#qtdQueijo").text();
+        var qtdQ = parseInt(qtdQueijo.toString());
+        var qtdHamburguer = $("#qtdHamburguer").text();
+        var qtdH = parseInt(qtdHamburguer.toString());
+        var qtdAlface = $("#qtdAlface").text();
+        var qtdA = parseInt(qtdAlface.toString());
+        var qtdBacon = $("#qtdBacon").text();
+        var qtdB = parseInt(qtdBacon.toString());
+
+        var promoQ = ValidaPromocao(qtdQ);
+        var valorQ = "1.50";
+        var promoH = ValidaPromocao(qtdH);
+        var valorH = "3.00";
+        var subTotal = $("#lblValor").text().replace("R$", "");
+
+        var desconto = (promoQ * valorQ);
+        desconto = desconto + (promoH * valorH);
+
+        var total = (subTotal - desconto)
+
+        if (qtdA > 0 && qtdB == 0) {
+            total = total - ((total * 10) / 100);
+        }
+
+        document.getElementById("lblTotal").innerHTML = "R$" + total.toFixed(2);
+    }
+
+    function AddQueijo() {
+
+        var qtdQueijo = $("#qtdQueijo").text();
+        var qtd = parseInt(qtdQueijo.toString());
+        var qtdFinal = qtd + 1;
+        var valor = $("#lblValor").text().replace("R$", "");
+
+        var promo = ValidaPromocao(qtd);
+
+
+        document.getElementById("qtdQueijo").innerHTML = qtdFinal;
+        document.getElementById("lblValor").innerHTML = "R$" + CalcularValorSoma("1.50", qtdFinal, valor.replace(",", "."));
+        document.getElementById("lblTotal").innerHTML = "R$0.00";
+    }
+
+    function AddOvo() {
+
+        var qtdQueijo = $("#qtdOvo").text();
+        var qtd = parseInt(qtdQueijo.toString());
+        var qtdFinal = qtd + 1;
+        var valor = $("#lblValor").text().replace("R$", "");
+
+        document.getElementById("qtdOvo").innerHTML = qtdFinal;
+        document.getElementById("lblValor").innerHTML = "R$" + CalcularValorSoma("0.80", qtdFinal, valor.replace(",", "."));
+        document.getElementById("lblTotal").innerHTML = "R$0.00";
+    }
+
+    function AddHamburguer() {
+
+        var qtdQueijo = $("#qtdHamburguer").text();
+        var qtd = parseInt(qtdQueijo.toString());
+        var qtdFinal = qtd + 1;
+        var valor = $("#lblValor").text().replace("R$", "");
+
+        document.getElementById("qtdHamburguer").innerHTML = qtdFinal;
+        document.getElementById("lblValor").innerHTML = "R$" + CalcularValorSoma("3.00", qtdFinal, valor.replace(",", "."));
+        document.getElementById("lblTotal").innerHTML = "R$0.00";
+    }
+
+    function AddBacon() {
+        var qtdQueijo = $("#qtdBacon").text();
+        var qtd = parseInt(qtdQueijo.toString());
+        var qtdFinal = qtd + 1;
+        var valor = $("#lblValor").text().replace("R$", "");
+
+        document.getElementById("qtdBacon").innerHTML = qtdFinal;
+        document.getElementById("lblValor").innerHTML = "R$" + CalcularValorSoma("2.00", qtdFinal, valor.replace(",", "."));
+        document.getElementById("lblTotal").innerHTML = "R$0.00";
+    }
+
+    function AddAlface() {
+        var qtdQueijo = $("#qtdAlface").text();
+        var qtd = parseInt(qtdQueijo.toString());
+        var qtdFinal = qtd + 1;
+        var valor = $("#lblValor").text().replace("R$", "");
+
+        document.getElementById("qtdAlface").innerHTML = qtdFinal;
+        document.getElementById("lblValor").innerHTML = "R$" + CalcularValorSoma("0.40", qtdFinal, valor.replace(",", "."));
+        document.getElementById("lblTotal").innerHTML = "R$0.00";
+    }
+
+    function CalcularValorSoma(valorItem, qtd, valor) {
+
+        valorI = parseFloat(valorItem);
+        soma = valorI + parseFloat(valor);
+        return soma.toFixed(2);
+    }
+
+    function ValidaPromocao(qtd) {
+
+        qtdPromo = parseInt(qtd);
+        vlPromo = 0;
+
+        while (qtdPromo >= 3) {
+            qtdPromo = qtdPromo - 3;
+            vlPromo++;
+        }
+
+        if (vlPromo >= 1) {
+            return vlPromo;
+        }
+        else {
+            return 0;
+        }
+    }
+
+    function RemoveQueijo() {
+
+        var qtdQueijo = $("#qtdQueijo").text();
+        var qtd = parseInt(qtdQueijo.toString());
+
+        if (qtd >= 1) {
+            var qtdFinal = qtd - 1;
+            var valor = $("#lblValor").text().replace("R$", "");
+
+            document.getElementById("qtdQueijo").innerHTML = qtdFinal;
+            document.getElementById("lblValor").innerHTML = "R$" + CalcularValorSub("1.50", valor.replace(",", "."));
+            document.getElementById("lblTotal").innerHTML = "R$0.00";
+        }
+
+
+    }
+
+    function RemoveOvo() {
+
+        var qtdQueijo = $("#qtdOvo").text();
+        var qtd = parseInt(qtdQueijo.toString());
+        if (qtd >= 1) {
+            var qtdFinal = qtd - 1;
+            var valor = $("#lblValor").text().replace("R$", "");
+
+            document.getElementById("qtdOvo").innerHTML = qtdFinal;
+            document.getElementById("lblValor").innerHTML = "R$" + CalcularValorSub("0.80", valor.replace(",", "."));
+            document.getElementById("lblTotal").innerHTML = "R$0.00";
+        }
+    }
+
+    function RemoveHamburguer() {
+
+        var qtdQueijo = $("#qtdHamburguer").text();
+        var qtd = parseInt(qtdQueijo.toString());
+        if (qtd >= 1) {
+            var qtdFinal = qtd - 1;
+            var valor = $("#lblValor").text().replace("R$", "");
+            document.getElementById("qtdHamburguer").innerHTML = qtdFinal;
+            document.getElementById("lblValor").innerHTML = "R$" + CalcularValorSub("3.00", valor.replace(",", "."));
+            document.getElementById("lblTotal").innerHTML = "R$0.00";
+        }
+    }
+
+    function RemoveBacon() {
+        var qtdQueijo = $("#qtdBacon").text();
+        var qtd = parseInt(qtdQueijo.toString());
+        if (qtd >= 1) {
+            var qtdFinal = qtd - 1;
+            var valor = $("#lblValor").text().replace("R$", "");
+            document.getElementById("qtdBacon").innerHTML = qtdFinal;
+            document.getElementById("lblValor").innerHTML = "R$" + CalcularValorSub("2.00", valor.replace(",", "."));
+            document.getElementById("lblTotal").innerHTML = "R$0.00";
+        }
+    }
+
+    function RemoveAlface() {
+        var qtdQueijo = $("#qtdAlface").text();
+        var qtd = parseInt(qtdQueijo.toString());
+        if (qtd >= 1) {
+            var qtdFinal = qtd - 1;
+            var valor = $("#lblValor").text().replace("R$", "");
+
+            document.getElementById("qtdAlface").innerHTML = qtdFinal;
+            document.getElementById("lblValor").innerHTML = "R$" + CalcularValorSub("0.40", valor.replace(",", "."));
+            document.getElementById("lblTotal").innerHTML = "R$0.00";
+        }
+    }
+
+    function CalcularValorSub(valorItem, valor) {
+
+        valorI = parseFloat(valorItem);
+        sub = parseFloat(valor) - valorI;
+
+        return sub.toFixed(2);
+    }
+</script>
+
+

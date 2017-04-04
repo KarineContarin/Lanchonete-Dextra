@@ -1,0 +1,67 @@
+﻿@{
+    ViewBag.Title = "Escolha seu lanche";
+}
+@using (Html.BeginForm("Ingredientes", "Home"))
+{
+    <body>
+        <div id="pedidos">
+            <section id="pedidos-cabecalho">
+                <h1>@ViewBag.Title</h1>
+                <h1><b>Passo 1: </b>Escolha o seu lanche</h1>
+            </section>
+            <section id="pedidos-conteudo">
+
+
+                <div id="lanches" class="container">
+
+                    <div class="card">
+                        <img src="~/Images/XBACON.png" onclick="window.location.assign('Home/Ingredientes?H=1&B=1&Q=1&O=0')" alt="Avatar" style="width: 100%" />
+                        <div style="text-align: center">
+                            <h1><b>X-BACON</b></h1>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-left: 7%">
+                        <img src="~/Images/XBURGUER.png" onclick="window.location.assign('Home/Ingredientes?H=1&B=0&Q=1&O=0')" alt="Avatar" style="width: 100%" />
+                        <div style="text-align: center">
+                            <h1><b>X-BURGUER</b></h1>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-left: 6%">
+                        <img src="~/Images/XBACON.png" onclick="window.location.assign('Home/Ingredientes?H=1&B=0&Q=1&O=1')" alt="Avatar" style="width: 100%" />
+                        <div style="text-align: center">
+                            <h1><b>X-EGG</b></h1>
+                        </div>
+                    </div>
+
+                    <div class="card" style="margin-left: 7%">
+                        <img src="~/Images/X-EGG-BACON.png" onclick="window.location.assign('Home/Ingredientes?H=1&B=1&Q=1&O=1')" alt="Avatar" style="width: 100%" />
+                        <div style="text-align: center">
+                            <h1><b>X-EGG BACON</b></h1>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <ul class="options-list">
+                        <li>
+                            <button class="button" style="width: 95%; font-size: medium" onclick=" window.location.assign('Home/Ingredientes')">MONTE O SEU LANCHE!</button>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </body>
+}
+
+<script type="text/javascript">
+    function montarPedido() {
+        window.location.assign("Home/Ingredientes");
+    }
+
+</script>
+
+
+

@@ -1,0 +1,86 @@
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\Lanchonete.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\Lanchonete.pdb
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\Antlr3.Runtime.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.AspNet.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.Core.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OAuth.Consumer.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OAuth.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OpenId.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\EntityFramework.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\Microsoft.Web.Infrastructure.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\Microsoft.Web.WebPages.OAuth.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\Newtonsoft.Json.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.Helpers.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.Mvc.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.Optimization.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.Razor.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.WebPages.Deployment.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.WebPages.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.WebPages.Razor.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\WebGrease.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\WebMatrix.Data.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\WebMatrix.WebData.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\EntityFramework.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\Newtonsoft.Json.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.Helpers.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.Mvc.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.Razor.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.WebPages.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.WebPages.Deployment.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\System.Web.WebPages.Razor.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\WebMatrix.Data.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\Microsoft.Web.WebPages.OAuth.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\WebMatrix.WebData.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.AspNet.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.Core.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OAuth.Consumer.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OAuth.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OpenId.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\obj\Debug\Lanchonete.dll
+c:\users\kah\documents\visual studio 2012\Projects\Lanchonete\Lanchonete\obj\Debug\Lanchonete.pdb
+C:\Users\Kah\Documents\Visual Studio 2012\Projects\Lanchonete\Lanchonete\obj\Debug\Lanchonete.csprojResolveAssemblyReference.cache
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\Lanchonete.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\Lanchonete.pdb
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\Antlr3.Runtime.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.AspNet.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.Core.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OAuth.Consumer.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OAuth.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OpenId.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\EntityFramework.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\Microsoft.Web.WebPages.OAuth.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\Newtonsoft.Json.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.Helpers.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.Mvc.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.Optimization.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.Razor.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.WebPages.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.WebPages.Razor.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\WebGrease.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\WebMatrix.Data.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\WebMatrix.WebData.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\EntityFramework.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\Newtonsoft.Json.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.Helpers.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.Mvc.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.Razor.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.WebPages.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\System.Web.WebPages.Razor.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\WebMatrix.Data.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\Microsoft.Web.WebPages.OAuth.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\WebMatrix.WebData.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.AspNet.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.Core.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OAuth.Consumer.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OAuth.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OpenId.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\obj\Debug\Lanchonete.csprojResolveAssemblyReference.cache
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\obj\Debug\Lanchonete.dll
+C:\Users\Kah\OneDrive\Lanchonete\Lanchonete\obj\Debug\Lanchonete.pdb
